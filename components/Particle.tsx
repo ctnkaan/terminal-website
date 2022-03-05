@@ -7,7 +7,7 @@ import Settings from "./particles.json"
 function Particle() {
 
     return (
-      <div style={{width: "100%"}}>
+      <div>
           <Particles
             // @ts-ignore
             options={Settings}
