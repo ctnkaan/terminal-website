@@ -8,11 +8,11 @@ import { SiTypescript, SiJavascript, SiGraphql, SiReact, SiApollographql, SiNode
 
 function Skills() {
   return (
-  <div className={SkillsStyles.skills}>
+  <div id="skills" className={SkillsStyles.skills}>
     <Container >
       <h1>Skills</h1>
       <Row>
-        <Col className={SkillsStyles.text} lg> Frontend Web Development ⭐⭐⭐⭐⭐<br/> Backend Web Development ⭐⭐⭐⭐⭐<br/> Cyber Security ⭐⭐⭐<br/> DevOps ⭐⭐</Col>
+        <Col className={SkillsStyles.text} lg> Frontend Web Development ⭐⭐⭐⭐⭐<br/> Backend Web Development ⭐⭐⭐⭐⭐<br/> DevOps ⭐⭐⭐ <br/> Cyber Security ⭐<br/></Col>
         <Col className={SkillsStyles.icons} lg> 
           <SiTypescript className={SkillsStyles.icon}/>
           <SiJavascript className={SkillsStyles.icon}/>

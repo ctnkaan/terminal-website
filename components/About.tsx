@@ -6,7 +6,7 @@ import {Container, Row, Col} from "react-bootstrap"
 
 function About() {
   return (
-      <Container className={AboutStyles.about}>
+      <Container id="about" className={AboutStyles.about}>
         <h1>About Me</h1>
         <Row>
           <Col lg> <Image src={developerGif} alt="Developer Gif" /></Col>

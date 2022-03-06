@@ -7,7 +7,7 @@ function NavbarComponent() {
   return (
   <Navbar className={navbarStyles.bootstrap_navbar} collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
   <Container>
-  <Navbar.Brand href="#home">Çetin Kaan Taşkıngenç</Navbar.Brand>
+  <Navbar.Brand href="#main">Çetin Kaan Taşkıngenç</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
@@ -18,15 +18,13 @@ function NavbarComponent() {
         <NavDropdown.Divider />
         <NavDropdown.Item href="#volunteer">Volunteer Experience</NavDropdown.Item>
       </NavDropdown>
+      <Nav.Link href="#projects">Projects</Nav.Link>
       <Nav.Link href="#certifications">Certifications</Nav.Link>
       <Nav.Link href="#workshops">Workshops</Nav.Link>
       <Nav.Link href="#references">References</Nav.Link>
     </Nav>
     <Nav>
       <Nav.Link href="#contact">Contact</Nav.Link>
-      <Nav.Link href="linkedIn">
-        LinkedIn
-      </Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
