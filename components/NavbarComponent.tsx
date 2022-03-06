@@ -1,5 +1,5 @@
 import React from "react";
-import navbarStyles from "../styles/navbar.module.scss";
+import navbarStyles from "../styles/Navbar.module.scss";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 
 
@@ -11,7 +11,7 @@ function NavbarComponent() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link href="#about">about</Nav.Link>
+      <Nav.Link href="#about">About</Nav.Link>
       <Nav.Link href="#skills">Skills</Nav.Link>
       <NavDropdown title="Experience" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#experience">Professional Experience</NavDropdown.Item>

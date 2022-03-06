@@ -8,7 +8,7 @@ function AnimationText() {
         {/*eslint-disable-next-line react/no-unescaped-entities*/}
         <h1 className={AnimationTextStyles.header}>Hi👋<br/><br/> I'm Çetin Kaan Taşkıngenç <br/><br/> A Fullstack Developer</h1>
 
-        <Button variant="secondary" href="#projects" className={AnimationTextStyles.button}>My Projects</Button>
+        <Button variant="secondary" href="#" className={AnimationTextStyles.button}>My Resume</Button>
     </div>
   )
 }
