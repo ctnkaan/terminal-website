@@ -1,15 +1,19 @@
 import type { NextPage } from "next";
+
+import About from "../components/About";
 import AnimationText from "../components/AnimationText";
-import Navbar from "../components/Navbar";
+import NavbarComponent from "../components/NavbarComponent";
 import Particle from "../components/Particle";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Navbar />
+      <NavbarComponent />
 
       <Particle/>
       <AnimationText />
+
+      <About />
 
       
     </div>

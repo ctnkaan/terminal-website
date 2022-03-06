@@ -10,17 +10,18 @@
     text-shadow: #fff;
     text-align: center;
     letter-spacing: 0.1rem;
-    z-index: 1;
+    z-index: 0;
 }
 
 .button {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, 530%);
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000;
+    color: #fff;
+    background-color: #333;
     text-shadow: #fff;
     text-align: center;
     text-transform: uppercase;

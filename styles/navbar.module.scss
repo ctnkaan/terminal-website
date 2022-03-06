@@ -17,6 +17,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
   ul {
     text-align: center;
     list-style-type: none;
@@ -47,4 +48,9 @@
 
 .content {
   text-align: center;
+}
+
+
+.bootstrap_navbar {
+  z-index: 100;
 }
