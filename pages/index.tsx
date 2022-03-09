@@ -6,6 +6,7 @@ import Experience from "../components/Experience";
 import NavbarComponent from "../components/NavbarComponent";
 import Particle from "../components/Particle";
 import Skills from "../components/Skills";
+import VolunteerExperience from "../components/VolunteerExperience";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
 
       {/* The Experience section */}
       <Experience />
+
+      {/* The Volunteer Experience section */}
+      <VolunteerExperience />
       
     </div>
   );
