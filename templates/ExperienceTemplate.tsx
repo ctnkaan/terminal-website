@@ -12,6 +12,7 @@ interface propsType {
     res1: string
     res2: string
     res3: string 
+    hr: boolean
 }
 
 function ExperienceTemplate(props: propsType) {
@@ -42,6 +43,9 @@ function ExperienceTemplate(props: propsType) {
                 </ul>
             </Col>
         </Row>
+
+        {props.hr ? <hr/> : null}
+        
     </div>
   )
 }
