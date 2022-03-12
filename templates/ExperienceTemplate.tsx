@@ -5,7 +5,7 @@ import ExperienceStyles from "../styles/Experience.module.scss"
 
 
 interface propsType {
-    image: any
+    image: StaticImageData
     name: string
     position: string
     date: string
@@ -26,9 +26,11 @@ function ExperienceTemplate(props: propsType) {
                 <h2>{props.name}</h2>
 
                 <p>
-                <b>{props.position}</b>
-                <br/>
-                <i> <b>{props.date}</b> </i>
+                    <b>{props.position}</b>
+                    <br/>
+                    <i> 
+                        <b>{props.date}</b>
+                    </i>
                 </p>
 
                 <b>Responsibilities:</b>

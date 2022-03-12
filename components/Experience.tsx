@@ -14,10 +14,10 @@ function Experience() {
         <ExperienceTemplate 
           image={Titanwolf} 
           name={"Titan Wolf Security"} 
-          position={"DevSecOps Intern"} 
+          position={"Fullstack Web Developer Intern"} 
           date={"Feburary 2022 - Present"} 
-          res1={"Configuring servers."}
-          res2={"Building Secure Development Pipelines."}
+          res1={"Configuring Linux servers."}
+          res2={"Building web applications with React, Node.js and TypeScript."}
           res3={"Learning about DevOps and Cyber Security."}
         />
 
@@ -26,9 +26,9 @@ function Experience() {
           name={"Yaşar University"} 
           position={"Undergraduate Lecturer"} 
           date={"October 2022 - Present"} 
-          res1={"Configuring servers."}
-          res2={"Building Secure Development Pipelines."}
-          res3={"Learning about DevOps and Cyber Security."}
+          res1={"Lecturing students on C and Java."}
+          res2={"Accompanied the professeor during Data Structures and Algorithms lessons."}
+          res3={"Helped students with their assignments."}
         />
 
         <ExperienceTemplate 
