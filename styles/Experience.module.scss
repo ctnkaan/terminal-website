@@ -13,7 +13,6 @@
         font-size: 1.5rem;
         font-weight: 300;
         margin-bottom: 1rem;
-        text-align: left;
         margin-top: 5%
     }
 }
@@ -24,3 +23,15 @@
     margin-bottom: 1rem;
 }
 
+$breakpoint: 990px;
+@media (max-width: $breakpoint) {
+    .experience {
+        .text {
+            text-align: center;
+        }
+        .h1 {
+            text-align: center;
+        }
+        
+    }
+}

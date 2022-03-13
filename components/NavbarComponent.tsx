@@ -21,7 +21,6 @@ function NavbarComponent() {
       <Nav.Link href="#projects">Projects</Nav.Link>
       <Nav.Link href="#certifications">Certifications</Nav.Link>
       <Nav.Link href="#workshops">Workshops</Nav.Link>
-      <Nav.Link href="#references">References</Nav.Link>
     </Nav>
     <Nav>
       <Nav.Link href="#contact">Contact</Nav.Link>

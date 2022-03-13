@@ -12,7 +12,7 @@ import VoC from "../assets/voc.jpg"
 
 function VolunteerExperience() {
   return (
-    <div style={{"backgroundColor": "#F0F8FF"}}>
+    <div>
       <Container id="volunteer" className={ExperienceStyles.experience}>
         <h1>Volunteer Experience</h1>
 
@@ -25,6 +25,7 @@ function VolunteerExperience() {
           res2 = {"Helped fellow Turkish students members with monthly calls."}
           res3 = {"First Ambassador selected from Yasar University."}
           hr = {true}
+          animation={"animate__fadeInRightBig"}
         />
 
         <ExperienceTemplate 
@@ -36,6 +37,7 @@ function VolunteerExperience() {
           res2 = {"Getting mentored and trained by Microsoft Turkey Employees."}
           res3 = {"Getting sponsored by Microsoft."}
           hr = {true}
+          animation={"animate__fadeInRightBig"}
         />
 
         <ExperienceTemplate 
@@ -47,6 +49,7 @@ function VolunteerExperience() {
           res2 = {"Spoke at the Postman Student Summit to over 300+ people."}
           res3 = {"First and only student leader from Turkey."}
           hr = {true}
+          animation={"animate__fadeInRightBig"}
         />
 
       <ExperienceTemplate 
@@ -58,6 +61,7 @@ function VolunteerExperience() {
           res2 = {"Managed teams of developers in many different areas such as Web, GameDev, AI/DL"}
           res3 = {"Mentored and trained over 100+ students."}
           hr = {true}
+          animation={"animate__fadeInRightBig"}
         />
 
       <ExperienceTemplate 
@@ -69,6 +73,7 @@ function VolunteerExperience() {
           res2 = {"Hosted biweekly meetups with other leads."}
           res3 = {"Assigned tasks to other leads."}
           hr = {false}
+          animation={"animate__fadeInRightBig"}
         />
 
       </Container>
