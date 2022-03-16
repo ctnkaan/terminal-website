@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       <Experience />
 
       {/* The Volunteer Experience section */}
-      <VolunteerExperience />
+      <VolunteerExperience/>
 
 
       {/* The Footer */}

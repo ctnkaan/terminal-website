@@ -23,7 +23,7 @@ function NavbarComponent() {
       <Nav.Link href="#workshops">Workshops</Nav.Link>
     </Nav>
     <Nav>
-      <Nav.Link href="#contact">Contact</Nav.Link>
+      <Nav.Link href="#footer">Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
