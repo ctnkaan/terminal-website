@@ -1,8 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import SkillsStyles from "../styles/Skills.module.scss"
-import Image from "next/image"
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import {
   SiTypescript, SiJavascript, SiGraphql, SiReact, SiApollographql, SiNodedotjs, SiHtml5,
   SiCss3, SiSass, SiDocker, SiMicrosoftazure, SiLinux, SiPython, SiJava, SiC, SiNextdotjs,
@@ -11,6 +10,7 @@ import {
 
 function Skills() {
   return (
+    <AnimationOnScroll animateIn={"animate__rubberBand"} duration={1.5} animateOnce={true}>
     <div id="skills" className={SkillsStyles.skills}>
       <Container >
         <h1>Skills</h1>
@@ -39,6 +39,7 @@ function Skills() {
         </Row>
       </Container>
     </div>
+    </AnimationOnScroll>
   )
 }
 
