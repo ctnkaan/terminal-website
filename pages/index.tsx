@@ -10,6 +10,7 @@ import Skills from "../components/Skills";
 import VolunteerExperience from "../components/VolunteerExperience";
 import "animate.css/animate.min.css";
 import Projects from "../components/Projects";
+import Certifications from "../components/Certifications";
 
 const Home: NextPage = () => {
   return (
@@ -35,6 +36,9 @@ const Home: NextPage = () => {
 
       {/* The Projects section */}
       <Projects />
+
+      {/* The Certifications section */}
+      <Certifications />
 
       {/* The Footer */}
       <Footer />
