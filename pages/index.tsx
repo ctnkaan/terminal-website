@@ -9,6 +9,7 @@ import Particle from "../components/Particle";
 import Skills from "../components/Skills";
 import VolunteerExperience from "../components/VolunteerExperience";
 import "animate.css/animate.min.css";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -32,6 +33,8 @@ const Home: NextPage = () => {
       {/* The Volunteer Experience section */}
       <VolunteerExperience/>
 
+      {/* The Projects section */}
+      <Projects />
 
       {/* The Footer */}
       <Footer />
