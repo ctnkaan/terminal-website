@@ -8,6 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install yarn dependencies
-        uses: yarn install
+        run: yarn install
       - name: Build static website
-        uses: yarn build
+        run: yarn build
