@@ -1,11 +1,11 @@
 import React from "react";
-import navbarStyles from "../styles/Navbar.module.scss";
+//import navbarStyles from "../styles/Navbar.module.scss";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 
 
 function NavbarComponent() {
   return (
-  <Navbar className={navbarStyles.bootstrap_navbar} collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
   <Container>
   <Navbar.Brand href="#main">Çetin Kaan Taşkıngenç</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
