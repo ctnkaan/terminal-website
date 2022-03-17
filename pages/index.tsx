@@ -11,6 +11,7 @@ import VolunteerExperience from "../components/VolunteerExperience";
 import "animate.css/animate.min.css";
 import Projects from "../components/Projects";
 import Certifications from "../components/Certifications";
+import Workshops from "../components/Workshops";
 
 const Home: NextPage = () => {
   return (
@@ -39,6 +40,9 @@ const Home: NextPage = () => {
 
       {/* The Certifications section */}
       <Certifications />
+
+      {/* The Workshops section */}
+      <Workshops />
 
       {/* The Footer */}
       <Footer />
