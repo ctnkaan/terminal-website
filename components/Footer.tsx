@@ -15,10 +15,10 @@ function Footer() {
         <h3>Çetin Kaan Taşkıngenç</h3>
         <p>Do follow me on my socials down below.</p>
         <ul className={FooterStyles.socials} style={{"paddingLeft": 0}}>
-          <li> <a href=""> <SiLinkedin/> </a> </li>
-          <li> <a href=""> <SiGithub/> </a> </li>
-          <li> <a href=""> <SiTwitter/> </a> </li>
-          <li> <a href=""> <SiInstagram/> </a> </li>
+          <li> <a href="https://www.linkedin.com/in/cetinkaantaskingenc"> <SiLinkedin/> </a> </li>
+          <li> <a href="https://github.com/ctnkaan"> <SiGithub/> </a> </li>
+          <li> <a href="https://twitter.com/CetinKaanTweets"> <SiTwitter/> </a> </li>
+          <li> <a href="https://www.instagram.com/cetinkaantaskingenc/"> <SiInstagram/> </a> </li>
         </ul>
       </div>
 
