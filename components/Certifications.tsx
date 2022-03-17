@@ -45,6 +45,53 @@ function Certifications() {
                 />
             </Col>
         </Row>
+
+        <h1>TryHackMe Badges</h1>
+        <Row>
+            <Col>
+                <CertificationTemplate 
+                title="cat linux.txt"
+                image_url="https://tryhackme.com/img/badges/linux.svg"
+                animation="animate__swing"
+                />
+            </Col>
+
+
+            <Col>
+                <CertificationTemplate 
+                title="Networking Nerd"
+                image_url="https://tryhackme.com/img/badges/networkfundamentals.svg"
+                animation="animate__swing"
+                />
+            </Col>
+
+
+            <Col>
+                <CertificationTemplate 
+                    title="World Wide Web"
+                    image_url="https://tryhackme.com/img/badges/howthewebworks.svg"
+                    animation="animate__swing"
+                />
+            </Col>
+
+
+            <Col>
+                <CertificationTemplate 
+                    title="7 Days Streak"
+                    image_url="https://tryhackme.com/img/badges/streak7.svg"
+                    animation="animate__swing"
+                />
+            </Col>
+
+            <Col>
+                <CertificationTemplate 
+                    title="Webbed"
+                    image_url="https://tryhackme.com/img/badges/webbed.svg"
+                    animation="animate__swing"
+                />
+            </Col>
+        </Row>
+
     </Container>
   )
 }
