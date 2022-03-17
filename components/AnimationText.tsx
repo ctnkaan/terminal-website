@@ -10,7 +10,7 @@ function AnimationText() {
 
         <Button 
           variant="secondary" 
-          href="https://drive.google.com/file/d/1TsEHAMgGjQha6QphFvA_IQLNys80lY3Z/view?usp=sharing"
+          href="https://drive.google.com/file/d/1S4p7xEuADNSkADRo_iGudCFw5rrW5wTG/view?usp=sharing"
           className={AnimationTextStyles.button}
         >
           My Resume
