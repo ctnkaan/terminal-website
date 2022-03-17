@@ -1,10 +1,12 @@
 {
+  "homepage": "https://ctnkaan.github.io/portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d out",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -25,6 +27,7 @@
     "@types/react": "17.0.39",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
+    "gh-pages": "^3.2.3",
     "typescript": "4.6.2"
   }
 }
