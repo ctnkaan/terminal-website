@@ -28,3 +28,39 @@
     letter-spacing: 0.1rem;
     z-index: 1;
 }
+
+//make it appear at the top of header
+.profileImage {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 1;
+}
+
+$breakpoint: 900px;
+@media (max-width: $breakpoint) {
+    .header {
+        top: 60%;
+    }
+
+    .button {
+        top: 60%;
+    }
+}
+
+
+$breakpoint: 376px;
+@media (max-width: $breakpoint) {
+    .button {
+        top: 40%;
+    }
+}
