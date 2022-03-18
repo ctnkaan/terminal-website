@@ -5,7 +5,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import {
   SiTypescript, SiJavascript, SiGraphql, SiReact, SiApollographql, SiNodedotjs, SiHtml5,
   SiCss3, SiSass, SiDocker, SiMicrosoftazure, SiLinux, SiPython, SiJava, SiC, SiNextdotjs,
-  SiExpress, SiGo
+  SiExpress, SiGo, SiMongodb, SiMysql, SiPostman, SiGit, SiGithub, SiBootstrap,
+  SiArduino, SiJest, SiJquery,
 } from "react-icons/si";
 
 function Skills() {
@@ -35,6 +36,15 @@ function Skills() {
             <SiJava className={SkillsStyles.icon} />
             <SiC className={SkillsStyles.icon} />
             <SiGo className={SkillsStyles.icon} />
+            <SiMongodb className={SkillsStyles.icon} />
+            <SiMysql className={SkillsStyles.icon} />
+            <SiPostman className={SkillsStyles.icon} />
+            <SiGit className={SkillsStyles.icon} />
+            <SiGithub className={SkillsStyles.icon} />
+            <SiBootstrap className={SkillsStyles.icon} />
+            <SiArduino className={SkillsStyles.icon} />
+            <SiJquery className={SkillsStyles.icon} />
+            <SiJest className={SkillsStyles.icon} />
           </Col>
         </Row>
       </Container>
