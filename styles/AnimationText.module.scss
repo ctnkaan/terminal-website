@@ -31,7 +31,7 @@
 
 .buttonDown {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     width: 100px;
     height: 100px;
@@ -65,16 +65,49 @@
 }
 
 
-$breakpoint: 650px;
+
+
+$breakpoint: 359px;
 @media (max-width: $breakpoint) {
     .button {
         top: 40%;
     }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+    }
 }
 
-$breakpoint: 376px;
+$breakpoint: 378px;
 @media (max-width: $breakpoint) {
     .button {
-        top: 18%;
+        top: 40%;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+    }
+}
+
+$breakpoint: 320px;
+@media (max-width: $breakpoint) {
+    .button {
+        top: 22%;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
     }
 }
