@@ -12,18 +12,6 @@ function Experience() {
         <h1>Professional Work Experience</h1>
 
         <ExperienceTemplate 
-          image={Titanwolf} 
-          name={"Titan Wolf Security"} 
-          position={"Fullstack Web Developer Intern"} 
-          date={"Feburary 2022 - Present"} 
-          res1={"Configuring Linux servers."}
-          res2={"Building web applications with React, Node.js and TypeScript."}
-          res3={"Learning about DevOps and Cyber Security."}
-          hr={true}
-          animation={"animate__fadeInLeftBig"}
-        />
-
-        <ExperienceTemplate 
           image={Yasar} 
           name={"Yaşar University"} 
           position={"Undergraduate Lecturer"} 

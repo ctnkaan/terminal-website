@@ -12,10 +12,15 @@ import "animate.css/animate.min.css";
 import Projects from "../components/Projects";
 import Certifications from "../components/Certifications";
 import Workshops from "../components/Workshops";
+import Head from "../components/Head";
 
 const Home: NextPage = () => {
   return (
     <div>
+
+      {/* Head of the website in HTML */}
+      <Head />
+
       {/* The Navbar*/}
       <NavbarComponent />
 
