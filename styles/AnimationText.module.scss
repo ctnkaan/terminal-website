@@ -1,7 +1,7 @@
 //make the header class in middle of Particle component
 .header {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
@@ -15,7 +15,7 @@
 
 .button {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 530%);
     font-size: 1.5rem;
@@ -31,7 +31,7 @@
 
 .buttonDown {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     width: 100px;
     height: 100px;
@@ -65,12 +65,22 @@
 }
 
 
+$breakpoint: 540px;
+@media (max-width: $breakpoint) {
+    .header {
+        font-size: 2.2rem;
+    }
+
+    .buttonDown {
+        top: 8%;
+    }
+}
 
 
-$breakpoint: 359px;
+$breakpoint: 378px;
 @media (max-width: $breakpoint) {
     .button {
-        top: 40%;
+        top: 35%;
     }
 
     .header {
@@ -80,9 +90,13 @@ $breakpoint: 359px;
     .button {
         font-size: 1.2rem;
     }
+
+    .buttonDown {
+        top: 2%;
+    }
 }
 
-$breakpoint: 378px;
+$breakpoint: 359px;
 @media (max-width: $breakpoint) {
     .button {
         top: 40%;
@@ -100,7 +114,7 @@ $breakpoint: 378px;
 $breakpoint: 320px;
 @media (max-width: $breakpoint) {
     .button {
-        top: 22%;
+        top: 30%;
     }
 
     .header {
@@ -109,5 +123,20 @@ $breakpoint: 320px;
 
     .button {
         font-size: 1.2rem;
+    }
+}
+
+$breakpoint: 303px;
+@media (max-width: $breakpoint) {
+    .button {
+        top: 10%;
+    }
+}
+
+
+$breakpoint: 650px;
+@media (max-height: $breakpoint) {
+    .header {
+        font-size: 2rem;
     }
 }
