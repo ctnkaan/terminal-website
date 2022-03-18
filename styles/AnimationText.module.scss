@@ -1,7 +1,7 @@
 //make the header class in middle of Particle component
 .header {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
@@ -15,7 +15,7 @@
 
 .button {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, 530%);
     font-size: 1.5rem;
@@ -29,38 +29,52 @@
     z-index: 1;
 }
 
-//make it appear at the top of header
-.profileImage {
+.buttonDown {
     position: absolute;
-    z-index: 2;
-    border-radius: 50%;
-    overflow: hidden;
-
-}
-
-.container {
-    position: absolute;
-    top: 10%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, 10%);
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, 530%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    text-shadow: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     z-index: 1;
+    border-radius: 50%;
+
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: #fff;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        z-index: 0;
+    }
+
 }
 
-$breakpoint: 900px;
+
+$breakpoint: 650px;
 @media (max-width: $breakpoint) {
-    .header {
-        top: 60%;
-    }
-
     .button {
-        top: 60%;
+        top: 40%;
     }
 }
-
 
 $breakpoint: 376px;
 @media (max-width: $breakpoint) {
     .button {
-        top: 40%;
+        top: 18%;
     }
 }
