@@ -16,7 +16,7 @@ import Head from "../components/Head";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div style={{backgroundColor: "#232530"}}>
 
       {/* Head of the website in HTML */}
       <Head />

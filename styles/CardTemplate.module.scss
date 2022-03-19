@@ -3,6 +3,15 @@
     text-align: center;
     margin: auto;
     margin-bottom: 10%;
+    background-color: #232530;
+    border-radius: 30px;
+
+    p {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 1%;
+    }
 }
 
 .ContainerStyles {
@@ -13,6 +22,7 @@
         text-align: center;
         padding-top: 10%;
         text-decoration: underline;
+        color: #fff;
     }
 }
 

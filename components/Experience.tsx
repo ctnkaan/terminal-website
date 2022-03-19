@@ -8,7 +8,8 @@ import ExperienceTemplate from '../templates/ExperienceTemplate'
 
 function Experience() {
   return (
-    <Container id="experience" className={ExperienceStyles.experience}>
+    <div style={{backgroundColor:"#323647"}}>
+      <Container id="experience" className={ExperienceStyles.experience}>
         <h1>Professional Work Experience</h1>
 
         <ExperienceTemplate 
@@ -34,8 +35,8 @@ function Experience() {
           hr={false}
           animation={"animate__fadeInLeftBig"}
         />
-        
-    </Container>
+      </Container>
+    </div>
   )
 }
 

@@ -15,11 +15,12 @@ function ListTemplate(props: propsType) {
         <ListGroup.Item
         as="li"
         className="d-flex justify-content-between align-items-start"
+        style={{color: "#fff", backgroundColor: "#323647"}}
         >
             <div className="ms-2 me-auto">
                 <div className="fw-bold">{props.name}</div>
             </div>
-            <Badge bg="primary" pill>
+            <Badge bg="dark" pill>
             Attendance: {props.attendance}
             </Badge>
         </ListGroup.Item>

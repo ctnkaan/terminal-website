@@ -12,6 +12,7 @@ import VoC from "../assets/voc.jpg"
 
 function VolunteerExperience() {
   return (
+    <div style={{"backgroundColor":"#232530"}}>
       <Container id="volunteer" className={ExperienceStyles.experience}>
         <h1>Volunteer Experience</h1>
 
@@ -75,7 +76,8 @@ function VolunteerExperience() {
           animation={"animate__fadeInLeftBig"}
         />
 
-      </Container>
+        </Container>
+      </div>
   )
 }
 

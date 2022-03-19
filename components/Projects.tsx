@@ -6,6 +6,7 @@ import CardTempStyles from '../styles/CardTemplate.module.scss'
 
 function Projects() {
   return (
+  <div style={{backgroundColor:"#323647"}}>
     <Container id="projects" className={CardTempStyles.ContainerStyles}>
       <h1>Projects</h1>
 
@@ -77,6 +78,7 @@ function Projects() {
       </Row>
 
     </Container>
+  </div>
   )
 }
 

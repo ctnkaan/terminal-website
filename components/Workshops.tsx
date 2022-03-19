@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListGroup, Badge, Container } from 'react-bootstrap'
+import { ListGroup, Container } from 'react-bootstrap'
 import WorkshopStyles from "../styles/Workshops.module.scss"
 import ListTemplate from '../templates/ListTemplate'
 
