@@ -23,7 +23,7 @@ function CardTemplate(props : propsType) {
               <Card.Text>
               {props.text}
               </Card.Text>
-              <Button href={props.button_link} variant="outline-warning"> <h4>GitHub</h4> </Button>
+              <Button style={{borderRadius:"20px"}} href={props.button_link} variant="outline-warning"> <h4>GitHub</h4> </Button>
           </Card.Body>
         </Card>
     </div>

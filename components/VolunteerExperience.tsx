@@ -4,10 +4,10 @@ import ExperienceStyles from "../styles/Experience.module.scss"
 import ExperienceTemplate from '../templates/ExperienceTemplate'
 
 import MLSA from "../assets/mlsa.png"
-import IMAGINE from "../assets/imagine.jpg"
-import Postman from "../assets/postman.jpg"
+import IMAGINE from "../assets/imagine.png"
+import Postman from "../assets/postman.png"
 import CS from "../assets/ieeecs.png"
-import VoC from "../assets/voc.jpg"
+import VoC from "../assets/voc.png"
 
 
 function VolunteerExperience() {

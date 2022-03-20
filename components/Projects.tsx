@@ -15,7 +15,7 @@ function Projects() {
           <CardTemplate
             title="Portfolio Website"
             image_url="https://miro.medium.com/max/724/1*LvA59wJi3O9jTMQQsw_cRA.png"
-            text="This is my portfolio website. It is built with React and Next.js."
+            text="This is my portfolio website. It is built with React and Next.js. It also uses Bootstrap and SASS for styling."
             button_link="https://github.com/ctnkaan/portfolio"
             animation='animate__flip'
           />
@@ -35,7 +35,7 @@ function Projects() {
           <CardTemplate
             title="Make Discord Bot"
             image_url="https://images.emojiterra.com/google/android-11/512px/1f916.png"
-            text="A CLI that can make you a discord bot. It has options for JavaScript and TypeScript."
+            text="A Command Line Interface that can make you a discord bot. It has options for JavaScript and TypeScript."
             button_link="https://github.com/ctnkaan/make-discord-bot"
             animation='animate__flip'
           />
@@ -59,7 +59,7 @@ function Projects() {
           <CardTemplate
             title='Weather App'
             image_url="https://cdn-icons-png.flaticon.com/512/1555/1555512.png"
-            text="A weather app made with Node.js and OpenWeatherMap API."
+            text="A weather app made with Node.js and OpenWeatherMap API. It displays the weather of a entered city."
             button_link="https://github.com/ctnkaan/WeatherApp"
             animation='animate__flip'
           />
@@ -69,7 +69,7 @@ function Projects() {
           <CardTemplate
             title='Todo List'
             image_url="https://thumbs.dreamstime.com/b/business-to-do-list-flat-icon-modern-style-task-list-business-to-do-list-flat-icon-modern-style-any-purposes-perfect-web-138650221.jpg"
-            text="A todo list made with React and MongoDB. It has specific endpoints for users."
+            text="A todo list made with React, Node.js, Express and MongoDB. It has specific endpoints for users."
             button_link="https://github.com/ctnkaan/ToDo"
             animation='animate__flip'
           />

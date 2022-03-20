@@ -2,7 +2,6 @@ import React from 'react'
 import { Container} from 'react-bootstrap'
 import ExperienceStyles from "../styles/Experience.module.scss"
 import Univerlist from "../assets/univerlist.png"
-import Titanwolf from "../assets/titanwolf.png"
 import Yasar from "../assets/yasar.png"
 import ExperienceTemplate from '../templates/ExperienceTemplate'
 

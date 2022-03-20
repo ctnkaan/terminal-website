@@ -133,6 +133,13 @@ $breakpoint: 303px;
     }
 }
 
+$breakpoint: 280px;
+@media (max-width: $breakpoint) {
+    .header {
+        top: 40%;
+    }
+}
+
 
 $breakpoint: 650px;
 @media (max-height: $breakpoint) {

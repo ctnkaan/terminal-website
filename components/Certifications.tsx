@@ -9,7 +9,6 @@ function Certifications() {
     <Container id="certifications" className={CardTempStyles.ContainerStyles}>
 
         <h1>Professional Certifications</h1>
-
         <Row>
             <Col>
                 <CertificationTemplate 
@@ -59,6 +58,7 @@ function Certifications() {
                     title="cat linux.txt"
                     image_url="https://tryhackme.com/img/badges/linux.svg"
                     animation="animate__swing"
+                    url="https://tryhackme.com/p/ctnkaan"
                     />
                 </Col>
 
@@ -68,6 +68,7 @@ function Certifications() {
                     title="Networking Nerd"
                     image_url="https://tryhackme.com/img/badges/networkfundamentals.svg"
                     animation="animate__swing"
+                    url="https://tryhackme.com/p/ctnkaan"
                     />
                 </Col>
 
@@ -77,6 +78,7 @@ function Certifications() {
                         title="World Wide Web"
                         image_url="https://tryhackme.com/img/badges/howthewebworks.svg"
                         animation="animate__swing"
+                        url="https://tryhackme.com/p/ctnkaan"
                     />
                 </Col>
 
@@ -86,6 +88,7 @@ function Certifications() {
                         title="7 Days Streak"
                         image_url="https://tryhackme.com/img/badges/streak7.svg"
                         animation="animate__swing"
+                        url="https://tryhackme.com/p/ctnkaan"
                     />
                 </Col>
 
@@ -94,6 +97,7 @@ function Certifications() {
                         title="Webbed"
                         image_url="https://tryhackme.com/img/badges/webbed.svg"
                         animation="animate__swing"
+                        url="https://tryhackme.com/p/ctnkaan"
                     />
                 </Col>
             </Row>

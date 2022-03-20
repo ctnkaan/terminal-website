@@ -62,6 +62,12 @@ function Workshops() {
                 attendance={32}
                 animation="animate__shakeY"
             />
+
+            <ListTemplate 
+                name="Azure & Cloud Computing"
+                attendance={12}
+                animation="animate__shakeY"
+            />
             
 
         </ListGroup>
