@@ -11,7 +11,7 @@ import {
 
 function Skills() {
   return (
-    <AnimationOnScroll animateIn={"animate__fadeInLeftBig"} duration={1.5} animateOnce={true}>
+    <AnimationOnScroll animateIn={"animate__fadeInLeftBig"} animateOnce={true}>
     <div id="skills" className={SkillsStyles.skills}>
       <Container >
         <h1>Skills</h1>
