@@ -7,7 +7,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function About() {
   return (
-    <AnimationOnScroll className={AboutStyles.about} animateIn={"animate__jello"} animateOnce={true}>
+    <AnimationOnScroll className={AboutStyles.about} animateIn={"animate__fadeInLeftBig"} animateOnce={true}>
       
       <Container id="about">
         <h1>About Me</h1>
@@ -17,7 +17,7 @@ function About() {
         </Row>
       </Container>
 
-      </AnimationOnScroll>
+    </AnimationOnScroll>
   )
 }
 
