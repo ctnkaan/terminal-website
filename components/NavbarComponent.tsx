@@ -7,7 +7,7 @@ function NavbarComponent() {
   return (
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
   <Container>
-  <Navbar.Brand href="#main">Çetin Kaan Taşkıngenç</Navbar.Brand>
+  <Navbar.Brand href="#home">Çetin Kaan Taşkıngenç</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">

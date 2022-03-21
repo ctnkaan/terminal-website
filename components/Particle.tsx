@@ -6,7 +6,7 @@ import Settings from "../assets/particles.json";
 function Particle() {
 
     return (
-        <div id="main" style={{minHeight: "1000px", backgroundColor: "#232530"}}>
+        <div id="home" style={{minHeight: "1000px", backgroundColor: "#232530"}}>
           <Particles
               // @ts-ignore
               options={Settings}
