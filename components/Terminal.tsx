@@ -1,5 +1,4 @@
 import React, {useRef, useEffect} from 'react'
-import { Container } from 'react-bootstrap'
 import styles from "../styles/terminal.module.css";
 import PreviousInputs from './PreviousInputs';
 import TerminalText from './TerminalText';
@@ -30,11 +29,11 @@ const Terminal = () => {
     return (
         //@ts-ignore-next-line
         <div className={styles.bg} onClick={(e) => { promptRef.current.focus()}}>
-            <Container>
+            <div>
                 <PreviousInputs inputs={inputs}/>
-            </Container>
+            </div>
 
-            <Container className={styles.container}>
+            <div className={styles.container}>
                 <TerminalText />
                 <input 
                     ref={promptRef}
@@ -43,7 +42,7 @@ const Terminal = () => {
                     autoFocus={true} 
                     onKeyPress={(e) => {handleInput(e)}}
                 />
-            </Container>
+            </div>
         </div>
     )
 }
