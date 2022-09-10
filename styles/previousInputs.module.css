@@ -1,0 +1,10 @@
+.textDiv {
+  display: flex;
+}
+.textDiv .text {
+  color: #00ff00;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5rem;
+}/*# sourceMappingURL=previousInputs.module.css.map */

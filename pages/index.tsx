@@ -5,7 +5,6 @@ import styles from "../styles/index.module.css";
 const Home: NextPage = () => {
   return (
     <div className={styles.bg}>
-      
       <Terminal />
     </div>
   );

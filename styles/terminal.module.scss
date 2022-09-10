@@ -11,17 +11,14 @@
     width: 75%;
     margin: 0 auto;
     font-size: 1.2rem;
+
+    overflow:auto;
+    overflow-x:hidden;
+
+
     .container {
         //display items next to each other
         display: flex;
-    }
-
-    p {
-        color: white;
-        font-family: 'Roboto Mono', monospace;
-        line-height: 1.5;
-        margin: 0;
-        padding: 1rem;
     }
 }
 

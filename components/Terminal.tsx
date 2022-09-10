@@ -1,6 +1,8 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import { Container } from 'react-bootstrap'
 import styles from "../styles/terminal.module.css";
+import PreviousInputs from './PreviousInputs';
+import TerminalText from './TerminalText';
 
 
 const Terminal = () => {
@@ -15,15 +17,27 @@ const Terminal = () => {
         }
     };
 
+    const scrollToBottom = () => {
+        //@ts-ignore-next-line
+        promptRef.current.scrollIntoView({ behavior: "smooth" })
+      }
+
+    useEffect(() => {
+        scrollToBottom()
+      }, [inputs]);
+    
+
     return (
         //@ts-ignore-next-line
         <div className={styles.bg} onClick={(e) => { promptRef.current.focus()}}>
-
+            <Container>
+                <PreviousInputs inputs={inputs}/>
+            </Container>
 
             <Container className={styles.container}>
-                <p>ctnkaan@portfolio:~$</p>
+                <TerminalText />
                 <input 
-                    ref={promptRef} 
+                    ref={promptRef}
                     className={styles.prompt} 
                     type="text" 
                     autoFocus={true} 
