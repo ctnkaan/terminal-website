@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
         <h5> &lt;&gt; with ❤️ by Çetin Kaan Taşkıngenç </h5>
-        <h7> (Still in Development) </h7>
+        <h6> (Still in Development) </h6>
     </footer>
   )
 }
