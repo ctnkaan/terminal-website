@@ -16,6 +16,7 @@ const checkCommand = (input: string) => {
                 <li className={styles.text}>clear - clears the terminal</li>
                 <li className={styles.text}>welcome - welcome message</li>
                 <li className={styles.text}>about - brief info about me</li>
+                <li className={styles.text}>socials - find me on social media</li>
             </ul>
         </div>
         );
@@ -47,9 +48,19 @@ const checkCommand = (input: string) => {
             </ul>
         </div>
         );
-    }
-    
-    else {
+    } else if (input === "socials") {
+        return (
+        <div style={{marginLeft: "1.5rem"}}>
+            <ul>
+                <p className={styles.text}>You can find me on:</p>
+                <p className={styles.text}>Github: <a href="https://github.com/ctnkaan" target="_blank" rel="noreferrer"> ctnkaan </a> </p>
+                <p className={styles.text}>LinkedIn: <a href="https://www.linkedin.com/in/ctnkaan/" target="_blank" rel="noreferrer">Çetin Kaan Taşkıngenç</a></p>
+                <p className={styles.text}>Twitter: <a href="https://twitter.com/cetinkaantweets" target="_blank" rel="noreferrer">@cetinkaantweets</a></p>
+                <p className={styles.text}>YouTube: <a href="https://www.youtube.com/c/CetinKaanTech/" target="_blank" rel="noreferrer">Cetin Kaan</a></p>
+            </ul>
+        </div>
+        );
+    } else {
         // eslint-disable-next-line react/no-unescaped-entities
         return <p className={styles.error}>invalid command, try writing "help"</p>;
     }

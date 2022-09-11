@@ -14,6 +14,7 @@ const Terminal = () => {
     commands.set("clear", "clear - clear the terminal");
     commands.set("welcome", "welcome message");
     commands.set("about", "about me");
+    commands.set("socials", "socials - find me on social media");
 
 
     //make a function that stores the event value in a stack
