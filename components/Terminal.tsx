@@ -12,7 +12,8 @@ const Terminal = () => {
     const commands = new Map();
     commands.set("help", "help - list all commands");
     commands.set("clear", "clear - clear the terminal");
-
+    commands.set("welcome", "welcome message");
+    commands.set("about", "about me");
 
 
     //make a function that stores the event value in a stack
@@ -54,11 +55,19 @@ const Terminal = () => {
     useEffect(() => {
         scrollToBottom()
       }, [inputs]);
+
+    useEffect(() => {
+        setInputs([...inputs, "welcome"]);
+        //@ts-ignore-next-line
+        promptRef.current.focus()
+      }, []);
     
 
     return (
         //@ts-ignore-next-line
         <div className={styles.bg} onClick={(e) => { promptRef.current.focus()}}>
+
+
             <div>
                 <PreviousInputs inputs={inputs}/>
             </div>
@@ -69,7 +78,7 @@ const Terminal = () => {
                     ref={promptRef}
                     className={styles.prompt} 
                     type="text" 
-                    autoFocus={true} 
+                    autoFocus
                     onKeyPress={(e) => {handleInput(e)}}
                 />
             </div>
