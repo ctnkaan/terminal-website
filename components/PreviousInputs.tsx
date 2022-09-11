@@ -72,11 +72,11 @@ const PreviousInputs = (props: Props) => {
         {props.inputs.map((input: string, index: number) => {
             return (
                 <>
-                <div className={styles.textDiv} key={index}>
-                    <TerminalText />
-                    <p className={styles.text}>{input}</p>
-                </div>
-                {checkCommand(input)}
+                    <div className={styles.textDiv} key={index}>
+                        <TerminalText />
+                        <p className={styles.text}>{input}</p>
+                    </div>
+                    {checkCommand(input)}
                 </>
             )
         })

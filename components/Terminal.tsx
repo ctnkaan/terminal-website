@@ -7,8 +7,10 @@ import TerminalText from './TerminalText';
 const Terminal = () => {
     const promptRef = useRef(null);
     const [inputs, setInputs] = useState([] as string[]);
+    const [currentInput, setCurrentInput] = useState(0);
 
 
+    
     const commands = new Map();
     commands.set("help", "help - list all commands");
     commands.set("clear", "clear - clear the terminal");
@@ -20,32 +22,41 @@ const Terminal = () => {
     //make a function that stores the event value in a stack
     const handleInput = (e :any) => {
 
-        const clear = () => {
-            setInputs([]);
-        }
-
-        const help = () => {
-            
-        }
-
 
         if (e.key === "Enter") {
 
             const input = e.target.value;
             setInputs([...inputs, input]);
+            setCurrentInput(currentInput + 1);
+            
 
             if (commands.get(input)) {
                 if (input === "clear") {
-                    clear();
-                }
-                else if (input === "help") {
-                    help();
+                    setInputs([]);
                 }
             }
 
-
             e.target.value = "";
         }
+
+        //have up and down arrow keys scroll through the stack
+        if (e.key === "ArrowUp") {
+            if (currentInput > 0) {
+                setCurrentInput(currentInput - 1);
+                e.target.value = inputs[currentInput - 1];
+
+            }
+        } else if (e.key === "ArrowDown") {
+            if (currentInput < inputs.length) {
+                setCurrentInput(currentInput + 1);
+                if (inputs[currentInput + 1] === undefined)
+                    e.target.value="" 
+                else 
+                    e.target.value = inputs[currentInput + 1];
+            }
+        }
+        
+
     };
 
     const scrollToBottom = () => {
@@ -59,6 +70,7 @@ const Terminal = () => {
 
     useEffect(() => {
         setInputs([...inputs, "welcome"]);
+        setCurrentInput(currentInput + 1);
         //@ts-ignore-next-line
         promptRef.current.focus()
       }, []);
@@ -80,7 +92,7 @@ const Terminal = () => {
                     className={styles.prompt} 
                     type="text" 
                     autoFocus
-                    onKeyPress={(e) => {handleInput(e)}}
+                    onKeyDown={(e) => {handleInput(e)}}
                 />
             </div>
         </div>
