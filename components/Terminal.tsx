@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import styles from "../styles/terminal.module.css";
 import PreviousInputs from './PreviousInputs';
 import TerminalText from './TerminalText';
@@ -6,12 +6,42 @@ import TerminalText from './TerminalText';
 
 const Terminal = () => {
     const promptRef = useRef(null);
-    const [inputs, setInputs] = React.useState([] as string[]);
+    const [inputs, setInputs] = useState([] as string[]);
+
+
+    const commands = new Map();
+    commands.set("help", "help - list all commands");
+    commands.set("clear", "clear - clear the terminal");
+
+
 
     //make a function that stores the event value in a stack
     const handleInput = (e :any) => {
+
+        const clear = () => {
+            setInputs([]);
+        }
+
+        const help = () => {
+            
+        }
+
+
         if (e.key === "Enter") {
-            setInputs([...inputs, e.target.value]);
+
+            const input = e.target.value;
+            setInputs([...inputs, input]);
+
+            if (commands.get(input)) {
+                if (input === "clear") {
+                    clear();
+                }
+                else if (input === "help") {
+                    help();
+                }
+            }
+
+
             e.target.value = "";
         }
     };

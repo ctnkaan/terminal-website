@@ -7,4 +7,22 @@
   line-height: 1.5;
   margin: 0;
   padding: 0.5rem;
+}
+
+.text {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.error {
+  color: #ff0000;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
 }/*# sourceMappingURL=previousInputs.module.css.map */
