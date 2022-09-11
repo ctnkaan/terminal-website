@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/terminalText.module.css";
+import styles from "../styles/css/terminalText.module.css";
 
 const TerminalText = () => {
   return (

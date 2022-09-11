@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react'
-import styles from "../styles/terminal.module.css";
+import styles from "../styles/css/terminal.module.css";
 import PreviousInputs from './PreviousInputs';
 import TerminalText from './TerminalText';
 
@@ -8,20 +8,10 @@ const Terminal = () => {
     const promptRef = useRef(null);
     const [inputs, setInputs] = useState([] as string[]);
     const [currentInput, setCurrentInput] = useState(0);
-
-
-    
-    const commands = new Map();
-    commands.set("help", "help - list all commands");
-    commands.set("clear", "clear - clear the terminal");
-    commands.set("welcome", "welcome message");
-    commands.set("about", "about me");
-    commands.set("socials", "socials - find me on social media");
-
+    const [inputsForArrowKeys, setInputsForArrowKeys] = useState([] as string[]);
 
     //make a function that stores the event value in a stack
     const handleInput = (e :any) => {
-
 
         if (e.key === "Enter") {
 
@@ -30,10 +20,9 @@ const Terminal = () => {
             setCurrentInput(currentInput + 1);
             
 
-            if (commands.get(input)) {
-                if (input === "clear") {
-                    setInputs([]);
-                }
+            if (input === "clear") {
+                setInputs([]);
+                setCurrentInput(0);
             }
 
             e.target.value = "";
