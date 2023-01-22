@@ -4,14 +4,14 @@ import Terminal from "../components/Terminal";
 import styles from "../styles/css/index.module.css";
 
 const Home: NextPage = () => {
-  return (
-    <div className={styles.bg}>
-      <div className={styles.marginDiv}></div>
-      <Terminal />
+	return (
+		<div className={styles.bg}>
+			<div className={styles.marginDiv} />
+			<Terminal />
 
-      <Footer />
-    </div>
-  );
+			<Footer />
+		</div>
+	);
 };
 
 export default Home;

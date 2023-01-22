@@ -10,11 +10,11 @@
     height: 75vh;
     width: 75%;
     margin: 0 auto;
-    font-size: 1.2rem;
-
+    font-size: 100%;
+    min-width: 500px;
     overflow:auto;
     overflow-x:hidden;
-
+    overflow-y:visible;
 
     .container {
         //display items next to each other
