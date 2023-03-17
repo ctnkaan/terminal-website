@@ -55,12 +55,7 @@ const Terminal = () => {
 	};
 
 	return (
-		<div
-			className={styles.bg}
-			onClick={(e) => {
-				promptRef.current.focus();
-			}}
-		>
+		<div className={styles.bg}>
 			<div>
 				<PreviousInputs inputs={inputs} />
 			</div>
@@ -72,7 +67,6 @@ const Terminal = () => {
 					ref={promptRef}
 					className={styles.prompt}
 					type="text"
-					autoFocus
 					onKeyDown={(e) => {
 						handleInput(e);
 					}}
