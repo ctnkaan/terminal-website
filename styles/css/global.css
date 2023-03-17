@@ -1,0 +1,12 @@
+body {
+  background-image: linear-gradient(to left bottom, #2d2d30, #3a3a3f, #47484e, #55575e, #63666f, #676b77, #6c717e, #707686, #6c7286, #686f85, #646b85, #606784);
+  width: 100%;
+  min-height: 98vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: 100%;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -2,11 +2,11 @@
   display: flex;
 }
 .textDiv .text {
-  color: #00ff00;
+  color: #f9f1a5;
   font-family: "Roboto Mono", monospace;
   line-height: 1.5;
-  margin: 0;
   padding: 0.5rem;
+  padding-left: 0;
 }
 
 .text {
@@ -14,8 +14,6 @@
   font-family: "Roboto Mono", monospace;
   line-height: 1.5;
   margin: 0;
-  padding: 0.5rem;
-  padding-right: 5%;
 }
 
 .error {
@@ -24,7 +22,7 @@
   line-height: 1.5;
   margin: 0;
   padding: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 1%;
 }
 
 /*# sourceMappingURL=previousInputs.module.css.map */

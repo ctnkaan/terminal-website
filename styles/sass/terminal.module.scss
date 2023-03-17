@@ -1,20 +1,23 @@
 .bg {
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.522);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10.9px);
     border: 1px solid rgba(0, 0, 0, 1);
 
-    height: 75vh;
-    width: 75%;
+    height: 90vh;
+    width: 98vw;
     margin: 0 auto;
-    font-size: 100%;
-    min-width: 500px;
+    font-size: 85%;
     overflow:auto;
     overflow-x:hidden;
     overflow-y:visible;
+    margin-top: 1%;
+
+    max-height: 93vh;
+    min-height: 93vh;
 
     .container {
         //display items next to each other
@@ -23,7 +26,7 @@
 }
 
 .prompt {
-    color: #00ff00;
+    color: #f9f1a5;
     background: transparent;
     border: none;
     outline: none;

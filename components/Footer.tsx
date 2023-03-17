@@ -1,12 +1,17 @@
-import React from 'react'
+import React from "react";
 import styles from "../styles/css/footer.module.css";
 const Footer = () => {
-  return (
-    <footer className={styles.footer}>
-        <h5> &lt;&gt; with ❤️ by Çetin Kaan Taşkıngenç </h5>
-        <h6> (Still in Development) </h6>
-    </footer>
-  )
-}
+	return (
+		<div className={styles.footer}>
+			<p
+				style={{
+					marginBottom: "0px",
+				}}
+			>
+				&lt;&gt; with ❤️ by Çetin Kaan Taşkıngenç{" "}
+			</p>
+		</div>
+	);
+};
 
-export default Footer
+export default Footer;

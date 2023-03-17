@@ -4,7 +4,7 @@
   line-height: 1.5;
   margin: 0;
   padding: 0.5rem;
-  padding-left: 1.2rem;
+  padding-left: 1%;
 }
 
 .workspace {
@@ -13,4 +13,6 @@
 
 .user {
   color: #f9f1a5;
-}/*# sourceMappingURL=terminalText.module.css.map */
+}
+
+/*# sourceMappingURL=terminalText.module.css.map */

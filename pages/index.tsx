@@ -5,10 +5,8 @@ import styles from "../styles/css/index.module.css";
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.bg}>
-			<div className={styles.marginDiv} />
+		<div>
 			<Terminal />
-
 			<Footer />
 		</div>
 	);

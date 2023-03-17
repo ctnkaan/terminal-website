@@ -21,7 +21,7 @@ const Terminal = () => {
 		promptRef.current.focus();
 	}, []);
 
-	//make a function that stores the event value in a stack
+	//stores the event value in a stack
 	const handleInput = (e: any) => {
 		if (e.key === "Enter") {
 			const input = e.target.value;
