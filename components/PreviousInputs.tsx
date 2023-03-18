@@ -7,19 +7,21 @@ interface Props {
 	inputs: string[];
 }
 
-const checkCommand = (input: string) => {
+const checkCommand = (input: string, index: number, length: number) => {
+	input = input.toLowerCase();
 	if (input === "help") {
 		return (
 			<div>
 				<ul>
+					<li className={styles.text}>resume - view my resume/cv</li>
 					<li className={styles.text}>help - lists all commands</li>
-					<li className={styles.text}>clear - clears the terminal</li>
 					<li className={styles.text}>welcome - welcome message</li>
+					<li className={styles.text}>clear - clears the terminal</li>
 					<li className={styles.text}>about - brief info about me</li>
-					<li className={styles.text}>socials - find me on social media</li>
-					<li className={styles.text}>
-						exp / experience - lists my work experience
-					</li>
+					<li className={styles.text}>twitter - find me on Twitter</li>
+					<li className={styles.text}>instagram - find me on Instagram</li>
+					<li className={styles.text}>github - find me on GitHub</li>
+					<li className={styles.text}>linkedin - find me on LinkedIn</li>
 				</ul>
 			</div>
 		);
@@ -33,21 +35,23 @@ const checkCommand = (input: string) => {
 				<ul>
 					<pre style={{ color: "#fff", textAlign: "left" }}>{ascii}</pre>
 					<p className={styles.text}>
-						Hi! I'm Çetin Kaan Taşkıngenç, a final year Management Information
-						Systems student in Yasar University that loves computer science.
+						I'm a Software Engineer with 1.5 years of experience, along with 3
+						years of experience in both building communities, speaking at large
+						events and teaching technical topics.
 					</p>
 					<p className={styles.text}>
-						I'm a community person and I take a part in many differnt technical
-						communities like Microsoft Learn Student Ambassadors, Postman
-						Student leaders and Google Developer Student Clubs.
+						As I've said I'm a community person and I take a part in many
+						differnt technical communities like Microsoft Learn Student
+						Ambassadors, Postman Student leaders and Google Developer Student
+						Clubs.
 					</p>
 					<p className={styles.text}>
-						I try to contribute as much as I can to the community. As of now
-						I've hosted more than 30 workshops and technical talks to over many
-						students worldwide.
+						As of now I've hosted more than 30 workshops and technical talks to
+						over many students worldwide. I'm a Gold Microsoft Learn Student
+						Ambassador and the first Postman Student Leader.
 					</p>
 					<p className={styles.text}>
-						I'm mostly interested in web development and cyber security.
+						My main interests are web development and web application security.
 					</p>
 				</ul>
 			</div>
@@ -66,104 +70,69 @@ const checkCommand = (input: string) => {
 				</ul>
 			</div>
 		);
-	} else if (input === "socials") {
+	} else if (input === "resume") {
+		//open a new tab with github
+		if (index === length - 1) {
+			window.open(
+				"https://drive.google.com/file/d/1ns3H3VFZop_z6z9WiohJxsFD6uN6YSEn/view?usp=sharing",
+				"Resume"
+			);
+		}
 		return (
 			<div>
 				<ul>
-					<p className={styles.text}>You can find me on:</p>
-					<p className={styles.text}>
-						Github:{" "}
-						<a
-							href="https://github.com/ctnkaan"
-							target="_blank"
-							rel="noreferrer"
-						>
-							{" "}
-							ctnkaan{" "}
-						</a>{" "}
-					</p>
-					<p className={styles.text}>
-						LinkedIn:{" "}
-						<a
-							href="https://www.linkedin.com/in/ctnkaan/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Çetin Kaan Taşkıngenç
-						</a>
-					</p>
-					<p className={styles.text}>
-						Twitter:{" "}
-						<a
-							href="https://twitter.com/cetinkaantweets"
-							target="_blank"
-							rel="noreferrer"
-						>
-							@cetinkaantweets
-						</a>
-					</p>
-					<p className={styles.text}>
-						YouTube:{" "}
-						<a
-							href="https://www.youtube.com/c/CetinKaanTech/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Cetin Kaan
-						</a>
-					</p>
+					<p className={styles.text}>Opening GitHub...</p>
 				</ul>
 			</div>
 		);
-	} else if (input === "experience" || input === "exp") {
+	} else if (input === "github") {
+		//open a new tab with github
+		if (index === length - 1) {
+			window.open("https://github.com/ctnkaan", "GitHub");
+		}
 		return (
 			<div>
-				<h3 className={styles.text}>
-					<strong>MindWorks</strong>
-				</h3>
-				<p className={styles.text}>Jr. Software Development Specialist</p>
-				<p className={styles.text}>May 2022 – Present</p>
 				<ul>
-					<p className={styles.text}>
-						{" "}
-						● Developed Microsoft Teams solutions using React.js and TypeScript
-						to improve developer productivity.
-					</p>
-					<p className={styles.text}>
-						{" "}
-						● Organized a 7 week long bootcamp for students who want to get
-						started with software development.
-					</p>
+					<p className={styles.text}>Opening GitHub...</p>
 				</ul>
-
-				<h3 className={styles.text}>
-					<strong>Yaşar University</strong>
-				</h3>
-				<p className={styles.text}>Undergraduate Asst. Lecturer</p>
-				<p className={styles.text}>Oct 2021 – Jun 2022</p>
+			</div>
+		);
+	} else if (input === "instagram" || input === "ınstagram") {
+		//open a new tab with github
+		if (index === length - 1) {
+			window.open("https://instagram.com/cetinkaantaskingenc/", "Instagram");
+		}
+		return (
+			<div>
 				<ul>
-					<p className={styles.text}>
-						● Assisted C Programming 1, C Programming 2, Java Programming and
-						Cyber Security courses.
-					</p>
-					<p className={styles.text}>
-						● Hosted a capture the flag event for the cyber security course.
-					</p>
+					<p className={styles.text}>Opening Instagram...</p>
 				</ul>
-
-				<h3 className={styles.text}>
-					<strong>Univerlist</strong>
-				</h3>
-				<p className={styles.text}>Software Engineering Intern</p>
-				<p className={styles.text}>Mar 2021 – Sep 2021</p>
+			</div>
+		);
+	} else if (input === "linkedin") {
+		//open a new tab with github
+		if (index === length - 1) {
+			window.open(
+				"https://www.linkedin.com/in/cetinkaantaskingenc/",
+				"LinkedIn"
+			);
+		}
+		return (
+			<div>
 				<ul>
-					<p className={styles.text}>
-						● Implemented front-end components to 2 large scale web applications
-						using React.js, GraphQL and Docker.
-					</p>
-					<p className={styles.text}>
-						● Wrote 2 internal documentations for 2 large projects.
-					</p>
+					<p className={styles.text}>Opening LinkedIn...</p>
+				</ul>
+			</div>
+		);
+	} else if (input === "twitter") {
+		//open a new tab with github
+		if (index === length - 1) {
+			window.open("https://twitter.com/cetinkaantweets", "Twitter");
+		}
+		return (
+			<div>
+				<ul>
+					<p className={styles.text}>Opening Twitter...</p>
 				</ul>
 			</div>
 		);
@@ -183,7 +152,7 @@ const PreviousInputs = (props: Props) => {
 							<TerminalText />
 							<p className={styles.text}>{input}</p>
 						</div>
-						{checkCommand(input)}
+						{checkCommand(input, index, props.inputs.length)}
 					</>
 				);
 			})}

@@ -55,7 +55,12 @@ const Terminal = () => {
 	};
 
 	return (
-		<div className={styles.bg}>
+		<div
+			className={styles.bg}
+			onClick={(e) => {
+				promptRef.current.focus();
+			}}
+		>
 			<div>
 				<PreviousInputs inputs={inputs} />
 			</div>

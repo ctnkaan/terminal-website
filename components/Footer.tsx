@@ -8,7 +8,7 @@ const Footer = () => {
 					marginBottom: "0px",
 				}}
 			>
-				&lt;&gt; with ❤️ by Çetin Kaan Taşkıngenç{" "}
+				&lt;&gt; with ❤️ by Çetin Kaan Taşkıngenç
 			</p>
 		</div>
 	);
