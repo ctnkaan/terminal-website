@@ -71,7 +71,6 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else if (input === "resume") {
-		//open a new tab with github
 		if (index === length - 1) {
 			window.open(
 				"https://drive.google.com/file/d/1ns3H3VFZop_z6z9WiohJxsFD6uN6YSEn/view?usp=sharing",
@@ -81,7 +80,7 @@ const checkCommand = (input: string, index: number, length: number) => {
 		return (
 			<div>
 				<ul>
-					<p className={styles.text}>Opening GitHub...</p>
+					<p className={styles.text}>Opening Resume...</p>
 				</ul>
 			</div>
 		);
