@@ -15,7 +15,6 @@ const checkCommand = (input: string, index: number, length: number) => {
 				<ul>
 					<li className={styles.text}>resume - view my resume/cv</li>
 					<li className={styles.text}>help - lists all commands</li>
-					<li className={styles.text}>welcome - welcome message</li>
 					<li className={styles.text}>clear - clears the terminal</li>
 					<li className={styles.text}>about - brief info about me</li>
 					<li className={styles.text}>twitter - find me on Twitter</li>
