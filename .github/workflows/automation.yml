@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install yarn dependencies
-        run: yarn install
+      - name: Install pnpm dependencies
+        run: pnpm install
       - name: Build static website
-        run: yarn build
+        run: pnpm build
