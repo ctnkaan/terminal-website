@@ -10,6 +10,10 @@ const Terminal = () => {
 		number,
 		React.Dispatch<React.SetStateAction<number>>
 	];
+	const [pressedEnter, setPressedEnter] = useState(false) as [
+		boolean,
+		React.Dispatch<React.SetStateAction<boolean>>
+	];
 
 	useEffect(() => {
 		scrollToBottom();
@@ -23,11 +27,12 @@ const Terminal = () => {
 
 	//stores the event value in a stack
 	const handleInput = (e: any) => {
+		console.log(e.key);
 		if (e.key === "Enter") {
 			const input = e.target.value;
 			setInputs([...inputs, input]);
 			setCurrentInput(currentInput + 1);
-
+			setPressedEnter(true);
 			if (input === "clear") {
 				setInputs([]);
 				setCurrentInput(0);
@@ -37,16 +42,22 @@ const Terminal = () => {
 		}
 		//have up and down arrow keys scroll through the stack
 		else if (e.key === "ArrowUp") {
+			console.log(inputs);
 			if (currentInput > 0) {
 				setCurrentInput(currentInput - 1);
 				e.target.value = inputs[currentInput - 1];
 			}
+
+			setPressedEnter(false);
 		} else if (e.key === "ArrowDown") {
 			if (currentInput < inputs.length) {
 				setCurrentInput(currentInput + 1);
 				if (inputs[currentInput + 1] === undefined) e.target.value = "";
 				else e.target.value = inputs[currentInput + 1];
 			}
+			setPressedEnter(false);
+		} else {
+			setPressedEnter(false);
 		}
 	};
 
@@ -62,7 +73,7 @@ const Terminal = () => {
 			}}
 		>
 			<div>
-				<PreviousInputs inputs={inputs} />
+				<PreviousInputs inputs={inputs} pressedEnter={pressedEnter} />
 			</div>
 
 			<div className={styles.container}>

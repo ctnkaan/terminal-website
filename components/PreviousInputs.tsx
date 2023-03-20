@@ -5,9 +5,15 @@ import styles from "../styles/css/previousInputs.module.css";
 
 interface Props {
 	inputs: string[];
+	pressedEnter: boolean;
 }
 
-const checkCommand = (input: string, index: number, length: number) => {
+const checkCommand = (
+	input: string,
+	index: number,
+	length: number,
+	pressedEnter: boolean
+) => {
 	input = input.toLowerCase();
 	if (input === "help") {
 		return (
@@ -70,7 +76,7 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else if (input === "resume") {
-		if (index === length - 1) {
+		if (index === length - 1 && pressedEnter) {
 			window.open(
 				"https://drive.google.com/file/d/1ns3H3VFZop_z6z9WiohJxsFD6uN6YSEn/view?usp=sharing",
 				"Resume"
@@ -84,8 +90,7 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else if (input === "github") {
-		//open a new tab with github
-		if (index === length - 1) {
+		if (index === length - 1 && pressedEnter) {
 			window.open("https://github.com/ctnkaan", "GitHub");
 		}
 		return (
@@ -96,8 +101,7 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else if (input === "instagram" || input === "ınstagram") {
-		//open a new tab with github
-		if (index === length - 1) {
+		if (index === length - 1 && pressedEnter) {
 			window.open("https://instagram.com/cetinkaantaskingenc/", "Instagram");
 		}
 		return (
@@ -108,8 +112,7 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else if (input === "linkedin") {
-		//open a new tab with github
-		if (index === length - 1) {
+		if (index === length - 1 && pressedEnter) {
 			window.open(
 				"https://www.linkedin.com/in/cetinkaantaskingenc/",
 				"LinkedIn"
@@ -123,8 +126,7 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else if (input === "twitter") {
-		//open a new tab with github
-		if (index === length - 1) {
+		if (index === length - 1 && pressedEnter) {
 			window.open("https://twitter.com/cetinkaantweets", "Twitter");
 		}
 		return (
@@ -135,7 +137,6 @@ const checkCommand = (input: string, index: number, length: number) => {
 			</div>
 		);
 	} else {
-		// eslint-disable-next-line react/no-unescaped-entities
 		return <p className={styles.error}>invalid command, try writing "help"</p>;
 	}
 };
@@ -145,13 +146,18 @@ const PreviousInputs = (props: Props) => {
 		<>
 			{props.inputs.map((input: string, index: number) => {
 				return (
-					<>
+					<div key={index}>
 						<div className={styles.textDiv} key={index}>
 							<TerminalText />
 							<p className={styles.text}>{input}</p>
 						</div>
-						{checkCommand(input, index, props.inputs.length)}
-					</>
+						{checkCommand(
+							input,
+							index,
+							props.inputs.length,
+							props.pressedEnter
+						)}
+					</div>
 				);
 			})}
 		</>
