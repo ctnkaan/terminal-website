@@ -3,7 +3,11 @@ import styles from "../styles/css/terminal.module.css";
 import PreviousInputs from "./PreviousInputs";
 import TerminalText from "./TerminalText";
 
-const Terminal = () => {
+interface IProps {
+	setKernelPanicked: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Terminal = (props: IProps) => {
 	const promptRef = useRef() as any;
 	const [inputs, setInputs] = useState([] as string[]);
 	const [currentInput, setCurrentInput] = useState(0) as [
@@ -73,7 +77,11 @@ const Terminal = () => {
 			}}
 		>
 			<div>
-				<PreviousInputs inputs={inputs} pressedEnter={pressedEnter} />
+				<PreviousInputs
+					inputs={inputs}
+					pressedEnter={pressedEnter}
+					setKernelPanicked={props.setKernelPanicked}
+				/>
 			</div>
 
 			<div className={styles.container}>

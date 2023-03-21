@@ -2,17 +2,18 @@
 import React from "react";
 import TerminalText from "./TerminalText";
 import styles from "../styles/css/previousInputs.module.css";
-
 interface Props {
 	inputs: string[];
 	pressedEnter: boolean;
+	setKernelPanicked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const checkCommand = (
 	input: string,
 	index: number,
 	length: number,
-	pressedEnter: boolean
+	pressedEnter: boolean,
+	setKernelPanicked: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
 	input = input.toLowerCase();
 	if (input === "help") {
@@ -136,6 +137,15 @@ const checkCommand = (
 				</ul>
 			</div>
 		);
+	} else if (
+		input === "rm -rf /" ||
+		input === "rm -rf / --no-preserve-root" ||
+		input === "sudo rm -rf /" ||
+		input === "sudo rm -rf / --no-preserve-root"
+	) {
+		setTimeout(() => {
+			setKernelPanicked(true);
+		}, 3000);
 	} else {
 		return <p className={styles.error}>invalid command, try writing "help"</p>;
 	}
@@ -155,7 +165,8 @@ const PreviousInputs = (props: Props) => {
 							input,
 							index,
 							props.inputs.length,
-							props.pressedEnter
+							props.pressedEnter,
+							props.setKernelPanicked
 						)}
 					</div>
 				);

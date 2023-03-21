@@ -1,0 +1,14 @@
+.bg {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    height: 100%;
+    z-index: 1;
+
+    p {
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
