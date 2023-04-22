@@ -7,17 +7,26 @@ interface IProps {
 	setKernelPanicked: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+interface ICurrentInputState {
+	currentInput: number;
+	setCurrentInput: React.Dispatch<React.SetStateAction<number>>;
+}
+
+interface IPressedEnterState {
+	pressedEnter: boolean;
+	setPressedEnter: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 const Terminal = (props: IProps) => {
 	const promptRef = useRef() as any;
+
 	const [inputs, setInputs] = useState([] as string[]);
-	const [currentInput, setCurrentInput] = useState(0) as [
-		number,
-		React.Dispatch<React.SetStateAction<number>>
-	];
-	const [pressedEnter, setPressedEnter] = useState(false) as [
-		boolean,
-		React.Dispatch<React.SetStateAction<boolean>>
-	];
+
+	const [currentInput, setCurrentInput] =
+		useState<ICurrentInputState["currentInput"]>(0);
+
+	const [pressedEnter, setPressedEnter] =
+		useState<IPressedEnterState["pressedEnter"]>(false);
 
 	useEffect(() => {
 		scrollToBottom();

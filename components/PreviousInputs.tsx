@@ -28,6 +28,7 @@ const checkCommand = (
 					<li className={styles.text}>instagram - find me on Instagram</li>
 					<li className={styles.text}>github - find me on GitHub</li>
 					<li className={styles.text}>linkedin - find me on LinkedIn</li>
+					<li className={styles.text}>rm -rf / - hey why is this here</li>
 				</ul>
 			</div>
 		);
